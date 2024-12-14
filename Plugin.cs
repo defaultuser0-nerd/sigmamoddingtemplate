@@ -8,6 +8,7 @@ using Newtilla;
 namespace sigmamodtemplate
 {
 	[BepInPlugin(PluginInfo.GUID, PluginInfo.Name, PluginInfo.Version)]
+	[ModdedGamemode]
 	public class Plugin : BaseUnityPlugin
 	{
 		bool inRoom;
@@ -40,7 +41,7 @@ namespace sigmamodtemplate
 			/* runs every frame */
 		}
 
-
+		[ModdedGamemodeJoin]        
 		public void OnModdedJoin(string gamemode)
 		{
 			/* it will right even if its enabled/disabled */
@@ -48,6 +49,7 @@ namespace sigmamodtemplate
 			inRoom = true;
 		}
 
+		[ModdedGamemodeLeave]
 		public void OnModdedLeave(string gamemode)
 		{
             /* code will go bye bye here */
