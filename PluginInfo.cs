@@ -5,7 +5,7 @@
 	/// </summary>
 	class PluginInfo
 	{
-		public const string GUID = "com.urname.sigmamodtemplate";
+		public const string GUID = "urname.sigmamodtemplate";
 		public const string Name = "sigmamodtemplate";
 		public const string Version = "1.0.0";
 	}
